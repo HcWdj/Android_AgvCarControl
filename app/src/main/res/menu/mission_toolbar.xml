@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_stop"
+        android:title="停止"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/item_ms_task"
+        android:title="添加任务"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/item_ms_downloadmap"
+        android:title="推送地图"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/item_ms_relocation"
+        android:title="摇杆"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/item_ms_downloadStat"
+        android:title="加载任务点"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/item_goCharge"
+        android:title="前往充电桩"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_ms_transfer"
+        android:title="变更建图模式"
+        app:showAsAction="never"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/item_ms_taskChain"
+        android:title="任务链"
+        app:showAsAction="never"
+        />
+</menu>

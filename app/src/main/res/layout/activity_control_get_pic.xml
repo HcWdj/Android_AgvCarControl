@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+        </android.support.v7.widget.Toolbar>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/c_image_View"
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/control_rocker"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tx_lineSpeed"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tx_maxLineSpeed"
+            android:layout_alignStart="@+id/tx_maxLineSpeed"
+            android:layout_marginBottom="-137dp"
+            android:layout_alignLeft="@+id/tx_maxLineSpeed" />
+
+        <TextView
+            android:id="@+id/tx_angleSpeed"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tx_maxAngleSpeed"
+            android:layout_alignLeft="@+id/tx_maxAngleSpeed"
+            android:layout_alignTop="@+id/tx_lineSpeed"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp" />
+
+
+        <TextView
+            android:id="@+id/tx_maxLineSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="137dp"
+            android:layout_marginEnd="310dp"
+            android:layout_marginRight="310dp"
+            android:text="线速度"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_setLineSpeed"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_maxLineSpeed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="291dp"
+            android:layout_marginRight="291dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="1"
+            android:text="0.5"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tx_maxAngleSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="137dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginRight="246dp"
+            android:text="角速度"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_setAngleSpeed"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_maxLineSpeed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="227dp"
+            android:layout_marginRight="227dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="1"
+            android:text="0.5"
+
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bn_ConfirmSpeed"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="223dp"
+            android:layout_marginRight="223dp"
+            android:layout_marginBottom="23dp"
+            android:text="确认修改"
+            android:textSize="15sp" />
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_createPic"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginBottom="3dp"-->
+            <!--android:text="开始建图" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_saveMap"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginEnd="110dp"-->
+            <!--android:layout_marginRight="110dp"-->
+            <!--android:layout_marginBottom="4dp"-->
+            <!--android:text="保存地图" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_charge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignStart="@+id/bt_saveMap"-->
+            <!--android:layout_alignLeft="@+id/bt_saveMap"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginStart="-2dp"-->
+            <!--android:layout_marginLeft="-2dp"-->
+            <!--android:layout_marginTop="49dp"-->
+            <!--android:text="保存充电桩" />-->
+
+        <socket.RockerView
+            android:id="@+id/my_rocker"
+            android:layout_width="178dp"
+            android:layout_height="156dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="188dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="7dp"
+            app:areaBackground="@mipmap/rocker_base"
+            app:rockerBackground="@mipmap/rocker"
+            app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+            app:rockerScale="0.3" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctl_batteryVoltage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+</RelativeLayout>
